@@ -1,3 +1,13 @@
 <resources>
-    <string name="app_name">Grader_T</string>
+    <string name="app_name">Grader_S</string>
+    <string name="register_in_text">Dont\'t have account? <b><u>Register Here</u></b></string>
+    <string name="log_in_text">Already have an account? <b><u>Login Here</u></b></string>
+
+    <string name="navigation_open">Open navigation</string>
+    <string name="navigation_close">Close navigation</string>
+    <string name="date_item">Date: %1$s</string>
+    <string name="otp_input_1_description">First digit of OTP</string>
+    <string name="otp_input_2_description">Second digit of OTP</string>
+    <string name="otp_input_3_description">Third digit of OTP</string>
+    <string name="otp_input_4_description">Fourth digit of OTP</string>
 </resources>

@@ -1,5 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="black">#FF000000</color>
+    <color name="black">#000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="theme">#E8E2D7</color>
+    <color name="button">#585652</color>
+    <color name="hint_color">#999999</color>
+    <color name="grey">#7C7B7B</color>
+    <color name="colorPresent">#7FFF00</color> <!-- Lighter shade of green for present -->
+    <color name="colorAbsent">#FF6347</color> <!-- Lighter shade of red for absent -->
+    <color name="colorFuture">#ffffff</color> <!-- Lighter shade of white for future -->
+    <color name="colorYellow">#FFFF00</color> <!-- Lighter shade of yellow for today -->
+    <color name="colorHoliday">#ADD8E6</color> <!-- Lighter shade of light salmon for holiday -->
 </resources>
