@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/theme">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints">
+        <!--    prachi edit problem of -ve margin and other wise responsiveness-->
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@color/button"
+            app:navigationIcon="@drawable/back_arrow">
+
+            <TextView
+                android:id="@+id/page_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/langar"
+                android:gravity="left"
+                android:text="Home Work"
+                android:textColor="@color/theme"
+                android:textSize="@dimen/_20sdp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end|center_vertical"
+                android:layout_marginEnd="@dimen/_20sdp"
+                android:src="@drawable/high_school" />
+
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <ImageView
+        android:id="@+id/logoImageView"
+        android:layout_width="124dp"
+        android:layout_height="90dp"
+        android:contentDescription="description"
+        android:src="@drawable/logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/appBarLayout" />
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="57dp"
+        android:layout_height="56dp"
+        android:contentDescription="description"
+        android:src="@drawable/homework1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/logoImageView" />
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="@dimen/_100sdp"
+        android:layout_height="@dimen/_150sdp"
+        android:layout_marginStart="@dimen/_145sdp"
+        android:layout_marginTop="8dp"
+        android:contentDescription="description"
+        android:src="@drawable/polygon_2"
+        app:layout_constraintEnd_toStartOf="@+id/image2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/logo" />
+
+    <TextView
+        android:id="@+id/image1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select class"
+        app:layout_constraintBottom_toTopOf="@id/to_create"
+        app:layout_constraintEnd_toEndOf="@id/image"
+        app:layout_constraintHorizontal_bias="0.8"
+        app:layout_constraintStart_toStartOf="@id/image"
+        app:layout_constraintTop_toTopOf="@id/image"
+        app:layout_constraintVertical_bias="0.348" />
+
+    <ImageView
+        android:id="@+id/image2"
+        android:layout_width="@dimen/_100sdp"
+        android:layout_height="@dimen/_150sdp"
+        android:layout_marginEnd="@dimen/_145sdp"
+        android:contentDescription="description"
+        android:src="@drawable/polygon_3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/image"
+        app:layout_constraintTop_toTopOf="@id/image" />
+
+    <TextView
+        android:id="@+id/image3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select Section"
+        app:layout_constraintBottom_toTopOf="@id/to_create"
+        app:layout_constraintEnd_toEndOf="@id/image2"
+        app:layout_constraintHorizontal_bias="0.131"
+        app:layout_constraintStart_toStartOf="@id/image2"
+        app:layout_constraintTop_toTopOf="@id/image2"
+        app:layout_constraintVertical_bias="0.348" />
+
+    <ImageView
+        android:id="@+id/image4"
+        android:layout_width="@dimen/_200sdp"
+        android:layout_height="@dimen/_80sdp"
+        android:layout_marginBottom="-33dp"
+        android:contentDescription="description"
+        android:src="@drawable/polygon_4"
+        app:layout_constraintBottom_toBottomOf="@+id/image"
+        app:layout_constraintEnd_toEndOf="@+id/image2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/image" />
+
+    <TextView
+        android:id="@+id/image5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select Subject"
+        app:layout_constraintBottom_toTopOf="@id/to_create"
+        app:layout_constraintEnd_toEndOf="@id/image4"
+        app:layout_constraintStart_toStartOf="@id/image4"
+        app:layout_constraintTop_toTopOf="@id/image4"
+        app:layout_constraintVertical_bias="0.386" />
+
+    <Button
+        android:id="@+id/to_create"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Take Attendance"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/image4" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

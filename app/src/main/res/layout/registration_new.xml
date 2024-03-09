@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/theme">
+    <!--    prachi edit layout responsive and ready to use-->
+
+
+    <TextView
+        android:id="@+id/forgetPasswordTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/andika_new_basic"
+        android:text="Registration Complete"
+        android:textColor="@color/button"
+        android:textSize="@dimen/_10sdp"
+        android:textStyle="bold"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed"
+        android:layout_marginTop="@dimen/_24sdp"/>
+
+    <TextView
+        android:id="@+id/enterPhoneLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="88dp"
+        android:fontFamily="@font/andika_new_basic"
+        android:gravity="center"
+        android:text="Save your Unique USER ID"
+        android:textColor="@color/grey"
+        android:textSize="@dimen/_8sdp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/forgetPasswordTitle" />
+
+    <TextView
+        android:id="@+id/phone_no_textview"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_16sdp"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="@dimen/_16sdp"
+        android:background="@drawable/roundbox_edittext"
+        android:fontFamily="@font/andika_new_basic"
+        android:gravity="center"
+        android:text="12345677"
+        android:textColor="#585652"
+        android:textColorHint="@color/button"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@id/enterPhoneLabel"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@id/enterPhoneLabel"
+        app:layout_constraintTop_toBottomOf="@id/enterPhoneLabel" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:backgroundTint="@color/grey"
+        android:fontFamily="@font/andika_new_basic"
+        android:text="Click To Log In"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
+        android:textColor="@color/grey"
+        android:textSize="@dimen/_9sdp"
+        app:layout_constraintEnd_toEndOf="@+id/phone_no_textview"
+        app:layout_constraintStart_toStartOf="@+id/phone_no_textview"
+        app:layout_constraintTop_toBottomOf="@+id/phone_no_textview" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

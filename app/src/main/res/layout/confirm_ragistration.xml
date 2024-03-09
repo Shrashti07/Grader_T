@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/theme">
+    <!--    prachi edit layout responsive and ready to use-->
+
+    <TextView
+        android:id="@+id/forgetPasswordTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_24sdp"
+        android:fontFamily="@font/andika_new_basic"
+        android:text="Confirm Registration"
+        android:textColor="@color/button"
+        android:textSize="@dimen/_10sdp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <!-- School Code EditText -->
+
+    <!-- School Code EditText -->
+
+    <!-- "Enter OTP" -->
+
+    <TextView
+        android:id="@+id/enterSchoolCodeLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/andika_new_basic"
+        android:text="Enter School Code"
+        android:textColor="@color/button"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="42dp"
+        tools:layout_editor_absoluteY="160dp" />
+
+    <!-- OTP Input Boxes -->
+
+    <EditText
+        android:id="@+id/school_code_edittext"
+        android:layout_width="896dp"
+        android:layout_height="48dp"
+        android:autofillHints="school"
+        android:background="@drawable/roundbox_edittext"
+        android:fontFamily="@font/andika_new_basic"
+        android:hint="School Code"
+        android:paddingLeft="12dp"
+        android:paddingTop="@dimen/_4sdp"
+        android:paddingRight="12dp"
+        android:paddingBottom="@dimen/_4sdp"
+        android:textColor="#585652"
+        android:textColorHint="@color/grey"
+        android:textSize="14sp"
+        tools:ignore="SmallSp"
+        tools:layout_editor_absoluteX="42dp"
+        tools:layout_editor_absoluteY="212dp" />
+
+    <TextView
+        android:id="@+id/enterOtpLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/andika_new_basic"
+        android:text="Enter OTP"
+        android:textColor="@color/button"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="42dp"
+        tools:layout_editor_absoluteY="283dp" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal"
+
+        android:weightSum="4"
+        app:layout_constraintStart_toStartOf="@+id/enterOtpLabel"
+        app:layout_constraintTop_toBottomOf="@id/enterOtpLabel">
+
+        <EditText
+            android:id="@+id/otp_input_1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/otp_box"
+            android:contentDescription="@string/otp_input_1_description"
+            android:fontFamily="@font/andika_new_basic"
+            android:importantForAccessibility="no"
+            android:inputType="number"
+            android:maxLength="1"
+
+            android:text=""
+            android:textAlignment="center"
+            android:textColor="@color/button"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/otp_input_2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/otp_box"
+            android:contentDescription="@string/otp_input_1_description"
+            android:fontFamily="@font/andika_new_basic"
+            android:importantForAccessibility="no"
+            android:inputType="number"
+            android:maxLength="1"
+            android:text=""
+            android:textAlignment="center"
+            android:textColor="@color/button"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/otp_input_3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/otp_box"
+            android:contentDescription="@string/otp_input_1_description"
+            android:fontFamily="@font/andika_new_basic"
+            android:importantForAccessibility="no"
+            android:inputType="number"
+            android:maxLength="1"
+            android:text=""
+            android:textAlignment="center"
+            android:textColor="@color/button"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/otp_input_4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/otp_box"
+            android:contentDescription="@string/otp_input_1_description"
+            android:fontFamily="@font/andika_new_basic"
+            android:importantForAccessibility="no"
+            android:inputType="number"
+            android:maxLength="1"
+            android:text=""
+            android:textAlignment="center"
+            android:textColor="@color/button"
+            android:textSize="20sp" />
+
+        <!-- Repeat the above EditText for the remaining OTP input boxes -->
+
+    </LinearLayout>
+
+    <!-- "Submit" Button -->
+    <Button
+        android:id="@+id/to_create"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="48dp"
+        android:background="@drawable/submit_button"
+        android:fontFamily="@font/caveat_brush"
+        android:paddingLeft="18dp"
+        android:paddingTop="@dimen/_2sdp"
+        android:paddingRight="18dp"
+        android:paddingBottom="@dimen/_2sdp"
+        android:text="Submit"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+

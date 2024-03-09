@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/theme">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_16sdp"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar_1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/button"
+            app:navigationIcon="@drawable/back_arrow">
+
+            <TextView
+                android:id="@+id/page_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/langar"
+                android:gravity="left"
+                android:text="Attendance"
+                android:textColor="@color/theme"
+                android:textSize="@dimen/_20sdp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end|center_vertical"
+                android:layout_marginEnd="@dimen/_20sdp"
+                android:src="@drawable/high_school" />
+
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+    <ImageView
+        android:id="@+id/logoImageView"
+        android:layout_width="106dp"
+        android:layout_height="82dp"
+        android:layout_marginTop="20dp"
+        android:contentDescription="description"
+        android:src="@drawable/logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.509"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/appBarLayout" />
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="88dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="12dp"
+        android:contentDescription="description"
+        android:src="@drawable/attendence"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/logoImageView" />
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="324dp"
+        android:layout_height="370dp"
+        android:layout_marginStart="212dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="45dp"
+        android:contentDescription="description"
+        android:src="@drawable/Rectangle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logo"
+        app:layout_constraintVertical_bias="0.23" />
+
+    <ImageView
+        android:id="@+id/image2"
+        android:layout_width="357dp"
+        android:layout_height="367dp"
+        android:layout_marginEnd="182dp"
+        android:layout_marginBottom="45dp"
+        android:contentDescription="description"
+        android:src="@drawable/Rectangle2"
+        app:layout_constraintBottom_toBottomOf="@+id/image"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.941"
+        app:layout_constraintStart_toEndOf="@+id/image"
+        app:layout_constraintTop_toTopOf="@+id/image"
+        app:layout_constraintVertical_bias="0.0" />
+    <!--    prachi edit in progress-->
+
+    <ImageView
+        android:id="@+id/image3"
+        android:layout_width="571dp"
+        android:layout_height="366dp"
+        android:layout_marginTop="24dp"
+        android:contentDescription="description"
+        android:src="@drawable/Rectangleatte"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.529"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logo" />
+
+    <ImageView
+        android:id="@+id/image4"
+        android:layout_width="@dimen/_100sdp"
+        android:layout_height="@dimen/_100sdp"
+        android:layout_marginTop="@dimen/_32sdp"
+        android:contentDescription="description"
+        android:src="@drawable/class1"
+        app:layout_constraintEnd_toEndOf="@+id/image3"
+        app:layout_constraintHorizontal_bias="0.581"
+        app:layout_constraintStart_toStartOf="@+id/image3"
+        app:layout_constraintTop_toBottomOf="@+id/image3" />
+
+    <Button
+        android:id="@+id/to_create"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Take Attendance"
+        app:layout_constraintEnd_toEndOf="@+id/image3"
+        app:layout_constraintHorizontal_bias="0.526"
+        app:layout_constraintStart_toStartOf="@id/image3"
+        app:layout_constraintTop_toBottomOf="@+id/image3" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

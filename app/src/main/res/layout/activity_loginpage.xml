@@ -1,6 +1,176 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/theme">
+    <!--    prachi edit layout responsive and ready to use-->
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <!-- Logo -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.0001"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/logoImageView"
+            android:layout_width="@dimen/_60sdp"
+            android:layout_height="@dimen/_60sdp"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:contentDescription="description"
+            android:src="@drawable/logo" />
+
+    </RelativeLayout>
+
+
+    <!-- User ID EditText -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.0003"
+        android:gravity="center">
+
+        <EditText
+            android:id="@+id/userIDEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_16sdp"
+            android:layout_marginEnd="@dimen/_16sdp"
+            android:backgroundTint="@color/grey"
+            android:ems="10"
+            android:fontFamily="@font/andika_new_basic"
+            android:hint="User Id"
+            android:inputType="textEmailAddress"
+            android:padding="10dp"
+            android:textColor="@color/grey"
+            android:textColorHint="@color/grey"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <!-- School ID EditText -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.0003"
+        android:gravity="center">
+
+        <EditText
+            android:id="@+id/SchoolIDEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_16sdp"
+            android:layout_marginEnd="@dimen/_16sdp"
+            android:layout_marginTop="@dimen/_1sdp"
+            android:ems="10"
+            android:fontFamily="@font/andika_new_basic"
+            android:hint="School ID"
+            android:inputType="textEmailAddress"
+            android:padding="10dp"
+            android:textColor="@color/grey"
+            android:textColorHint="@color/grey"
+            android:textSize="20sp"
+            android:backgroundTint="@color/grey" />
+
+    </RelativeLayout>
+
+    <!-- Password EditText -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.0003"
+        android:gravity="center">
+
+        <EditText
+            android:id="@+id/PasswordEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_16sdp"
+            android:layout_marginEnd="@dimen/_16sdp"
+            android:drawableRight="@drawable/eye"
+            android:ems="10"
+            android:fontFamily="@font/andika_new_basic"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:padding="10dp"
+            android:textColor="@color/grey"
+            android:textColorHint="@color/grey"
+            android:textSize="20sp"
+            app:passwordToggleEnabled="true"
+            android:backgroundTint="@color/grey" />
+
+    </RelativeLayout>
+
+    <!-- Forget Password TextView -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.0002"
+        android:gravity="center">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="@dimen/_120sdp"
+            android:layout_marginTop="1dp"
+            android:layout_marginEnd="@dimen/_50sdp"
+            android:fontFamily="@font/andika_new_basic"
+            android:gravity="end"
+            android:text="Forget Password ?"
+            android:textColor="@color/button"
+            android:textStyle="bold"
+            android:textSize="@dimen/_8sdp" />
+
+    </RelativeLayout>
+
+    <!-- Login Button -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.001"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/loginButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_170sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="@drawable/btn_bg"
+            android:fontFamily="@font/langar"
+            android:padding="8dp"
+            android:text="Login"
+            android:textSize="@dimen/_20sdp"
+            android:textStyle="normal" />
+
+        <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.0001"
+            tools:ignore="ObsoleteLayoutParam" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/loginButton"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="@dimen/_50sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_50sdp"
+            android:layout_marginBottom="@dimen/_50sdp"
+            android:fontFamily="@font/andika_new_basic"
+            android:text="@string/register_in_text"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
+            android:textColor="@color/grey"
+            android:textSize="@dimen/_12sdp" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>
